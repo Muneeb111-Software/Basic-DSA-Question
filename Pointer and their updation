@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+int marks = 85;
+int*ptr=&marks;
+
+cout<<"marks is="<<*ptr<<endl;
+cout<<"Address of marks is:"<<&marks<<endl;
+*ptr = 45;
+cout<<"After updating marks"<<*ptr<<endl;
+cout<<"After updating address is :"<<ptr;
+
+	return 0;
+}
