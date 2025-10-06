@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main(){
+// write program that ask user to enter name and age
+string name;
+cout<<"Enter your name:";
+cin>>name;
+float age;
+cout<<"Enter your age:";
+cin>>age;	
+	
+	return 0;
+}
