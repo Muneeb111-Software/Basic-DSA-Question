@@ -1,0 +1,29 @@
+#include<iostream>
+#include<list>
+#include<string>
+using namespace std;
+
+int main() {
+    list<string> cars ={"Toyota", "Honda", "Ford"};
+
+     
+      
+    cars.front() = " Bughati";// change ist elemnt
+    cars.back() = " Mercedes"; // change 2nd element
+     cout<<cars.front()<<endl;
+    cout<<cars.back()<<endl;
+    //
+    cars.push_back("VIGO"); // add element in last
+	cars.push_front("Tesla"); //add element in first
+	
+   for(string car :cars){
+   	cout<<car<<endl;
+	}
+	cars.pop_front(); //remove 1st element
+	cars.pop_back(); // remove 2nd element
+	for(string car: cars){
+		cout<<car<<" ";
+	}
+    return 0;
+}
+
