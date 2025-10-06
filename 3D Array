@@ -1,0 +1,40 @@
+#include <iostream> 
+using namespace std; 
+int main() { 
+    int marks[6][4]; 
+    int studentTotal[6]={0}; 
+    int subjectTotal[4]={0}; 
+    cout<<"Enter marks of 6 students of 4 subject:\n"; 
+    for(int i=0;i<6;i++){ 
+     cout<<"Enter the marks for Student"<<i+1<<":"<<endl; 
+        for(int j=0;j<4;j++)  
+  { 
+            cin>>marks[i][j]; 
+            studentTotal[i]+=marks[i][j]; 
+            subjectTotal[j]+=marks[i][j]; 
+ } 
+    } 
+    cout<<"Student averages and total"<<endl<<endl; 
+    for(int i=0;i<6;i++){ 
+     double avg=studentTotal[i]/6; 
+     cout<<"student#"<<i+1<<" total is :"<<studentTotal[i]<<"\tand the avg is:"<<avg;  
+     if(avg<50) 
+     cout<<"\tAt Risk"; 
+     else 
+     cout<<"Pass"; 
+     cout<<endl; 
+ } 
+ cout<<endl; 
+ cout<<"Subject avg and total"<<endl<<endl; 
+    for(int i=0;i<6;i++){ 
+     double avg=studentTotal[i]/4; 
+cout<<"Student subjects"<<i+1<<" total is :"<<studentTotal[i]<<"\tand the avg is:"<<avg; 
+
+if(avg<50) 
+cout<<"At Risk\t"; 
+else 
+cout<<"Pass"; 
+cout<<endl; 
+} 
+return 0; 
+}
