@@ -1,0 +1,18 @@
+#include<iostream>
+#include<list>
+using namespace std;
+int main(){
+list<int> a = {12,45,90,72,27};
+a.push_back(31);
+a.push_front(11);
+auto it =a.begin();
+advance(it, 2); // iter mov at 3 after 45
+a.insert(it,46);
+for(auto i:a){
+	cout<<i<<" ";
+}
+cout<<a.front()<<endl; // print 1 st el
+cout<<a.back()<<endl;
+cout<<*next(a.begin(),2);	
+	return 0;
+}
