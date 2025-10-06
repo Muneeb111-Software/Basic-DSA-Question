@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main(){
+int salary[5];
+
+int sum =0;
+int *ptr;
+ptr=salary;
+for(int i=0;i<5;i++){
+	cout<<"ENter the 5 salary :"<<i+1<<endl;
+	cin>>salary[i];
+}
+for(int i=0;i<5;i++){
+cout<<"Salary of employee no "<<i+1<<" using pointer is="<<*(ptr+i)<<endl;
+cout<<"Salary of employee no "<<i+1<<" using array is "<<salary[i]<<endl;	
+}
+int max =0;
+max = salary[0];
+for(int i=0;i<5;i++){
+	if(salary[i]>max){
+		max =salary[i];
+	}
+	
+}
+cout<<"The highest salary is:"<<max<<endl;
+
+for(int i =0;i<5;i++){
+sum+=salary[i];	
+}
+cout<<"sum of employee salary is: "<<sum<<endl;
+		
+}
