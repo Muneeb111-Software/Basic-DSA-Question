@@ -1,0 +1,14 @@
+#include<Iostream>
+#include<bits/stdc++.h>
+#include<list>
+using namespace std;
+int main(){
+	list<int> c={1,2,4,5.7,10};
+	auto it = find(c.begin(),c.end(),4);
+if (it!= c.end())
+	cout<<*it;
+ else
+	cout<<"Element not Found";
+
+	
+}
