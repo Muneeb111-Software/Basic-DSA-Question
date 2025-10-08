@@ -1,0 +1,17 @@
+
+#include<iostream>
+#include<string>
+#include<list>
+using namespace std;
+int main(){
+// accessing the elements
+list<string> b={"Muneeb","Haider","Alpha","Gamma"};
+b.push_back("tinkle");
+auto it =b.begin();
+advance(it,2);
+b.insert(it,"Abbasi");
+for(string i: b){
+	cout<<i<<" ";
+}	
+cout<<endl;	
+}
