@@ -1,0 +1,16 @@
+#include<iostream>
+#include<list>
+using namespace std;
+int main(){
+	list<float> num={12.4, 34.6,45.1,89.1,99,3};
+	num.push_back(100.0);
+	auto it = num.begin();
+		advance(it,0);
+		num.insert(it,1.1);
+	cout<<"List number:";
+	for(float nums: num){
+		cout<<nums<<" ";
+	}
+	cout<<endl;
+	
+}
