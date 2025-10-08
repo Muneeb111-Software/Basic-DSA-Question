@@ -1,0 +1,25 @@
+#include<iostream>
+#include<list>
+using namespace std;
+int main(){
+//	list<int> num={12,34,56,78,90,12};
+//	num.front()=1;
+//	num.back()=95;
+//	auto it = num.begin();
+//	advance(it,3);
+//	*it = 10;
+//	for(auto i :num){
+//		cout<<i<<" ";
+//	}
+//	cout<<endl;
+//}
+list<string> name={"Haider","Ali","Hussain","Osama"};
+name.push_back("Moheed");
+auto it = name.begin();
+advance(it,1);
+*it = "Abbasi";
+for(auto i :name){
+	cout<<i<<" ";
+}
+}
+
