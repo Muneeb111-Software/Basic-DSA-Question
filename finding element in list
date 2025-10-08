@@ -1,0 +1,16 @@
+#include<iostream>
+#include<list>
+using namespace std;
+int main(){
+//	list<int> l ={12,3,15,18,20};
+//	cout<<l.front()<<" ";
+//	cout<<*next(l.begin(),2);
+list<string> s={"Muneeb","Abbasi","Innocnet","Panda"};
+s.front();
+s.back();
+//cout<<*next(s.begin(),1)<<" ";
+for(auto m:s){
+	cout<<m<<" ";
+}
+cout<<endl;
+}
