@@ -1,0 +1,16 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+//	string str= "Muhammad Muneeb haider";
+//str.erase(0,8); // start from index 5 and remove 8 char
+//cout<<str;
+string ab= ("innocent Boy!");
+//ab.erase(3,1);
+//ab.erase(ab.begin()   + 4);
+//ab.erase(10);// delete every element after10
+//cout<<ab;
+ab.erase();
+cout<<ab;
+}
+
