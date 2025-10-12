@@ -1,0 +1,32 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class BankAccount {
+private:
+string accountnum;
+float balance;
+public:
+void setaccountnum(string ac) {
+	accountnum=ac;
+}
+string getaccountnum() {
+	return accountnum;
+}
+void setbalance(float b) {
+	 balance=b;
+}
+float getbalance() {
+	return balance;
+}
+void display() {
+	cout<<"Account number is :"<<accountnum<<endl;
+	cout<<"Balance :"<<balance<<endl;
+}	
+};
+int main() {
+BankAccount  account;
+account.setaccountnum("0x1244e47678");
+account.setbalance(1247.18);
+account.display();	
+	return 0;
+}
